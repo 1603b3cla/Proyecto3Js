@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Inversión</title>
+</head>
+
+<body>
+
+    <h2>Calculadora de Inversión</h2>
+
+    <label for="inversion">Cantidad a invertir:</label>
+    <input type="number" id="inversion" min="1" required>
+
+    <label for="interes">Interés anual (%):</label>
+    <input type="number" id="interes" min="0" step="0.01" required>
+
+    <label for="anios">Número de años:</label>
+    <input type="number" id="anios" min="1" required>
+
+    <button onclick="calcularInversion()">Calcular Inversión</button>
+
+    <ul id="resultado"></ul>
+
+    <script src="CicloE4.js"></script>
+
+</body>
+
+</html>
